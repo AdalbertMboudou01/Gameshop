@@ -1,0 +1,46 @@
+# Consignes de l'exercice (fichier local, non versionné)
+/Claude.md
+
+# Dépendances
+node_modules/
+
+# ---------- Données sensibles : ne jamais versionner ----------
+# Base SQLite de la boutique : comptes clients (hachages de mots de passe),
+# sessions, paniers et commandes.
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Variables d'environnement (jetons d'API Strapi, identifiants).
+# Seul le modèle .env.example est versionné.
+.env
+.env.*
+!.env.example
+
+# Clés et certificats (HTTPS, signatures)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ---------- Fichiers générés ----------
+# Tests de bout en bout (captures d'écran, rapports)
+test-results/
+playwright-report/
+coverage/
+
+# Journaux
+*.log
+npm-debug.log*
+
+# Systèmes et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

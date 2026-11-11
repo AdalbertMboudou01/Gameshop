@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GameShop — consoles de jeux vidéo, livraison offerte.">
+  <meta name="theme-color" content="#0a1f5c">
+  <title>GameShop</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/vendor/inter/files/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/vendor/inter/wght.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body class="is-booting">
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+  <div id="top-strip" class="top-strip" hidden></div>
+  <header id="site-header" class="site-header"></header>
+  <nav id="site-nav" class="site-nav" aria-label="Navigation du catalogue" hidden></nav>
+  <main id="main" tabindex="-1">
+    <p class="boot-loader" role="status"><span class="spinner" aria-hidden="true"></span>Chargement de la boutique…</p>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>GameShop · boutique de démonstration</p>
+      <p>Paiements simulés : aucune transaction réelle.</p>
+    </div>
+  </footer>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <div id="announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+  <noscript><p class="noscript">GameShop nécessite JavaScript pour fonctionner.</p></noscript>
+</body>
+</html>

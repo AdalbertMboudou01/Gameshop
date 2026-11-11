@@ -1,0 +1,29 @@
+{
+  "name": "gameshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini-boutique de consoles de jeux vidéo — catalogue Strapi, comptes SQLite, paiement fictif.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --env-file-if-exists=.env --watch server/index.js",
+    "seed": "node --env-file-if-exists=.env scripts/seed.js",
+    "lint": "eslint .",
+    "test": "node --test \"tests/unit/*.test.js\"",
+    "test:e2e": "node --env-file-if-exists=.env tests/e2e.mjs",
+    "check": "npm run lint && npm test"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.14.0",
+    "playwright-core": "^1.65.0"
+  }
+}
